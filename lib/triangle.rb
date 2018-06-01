@@ -12,6 +12,7 @@ class Triangle
   end
 
   def kind
+    binding.pry
     raise TriangleError if !triangle?
     sides_enum
     if scalene?
